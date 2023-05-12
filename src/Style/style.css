@@ -1,23 +1,5 @@
-img{
-    width: 50px;
-    padding: 5%;
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+.nav-heading{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
 }
-td {
-    height: 50px;
-    vertical-align: center;
-    }
-tr:hover {
-    background-color:#f5f5f54b;
-    }
-html{
-    background-color: #212a34;
-    color: #e9e8e3;
-}
-th{
-    background-color: chocolate;
-}
-h1{
-    text-align: center;
-    font-family: cursive;
-}
-
