@@ -3,3 +3,25 @@
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
 }
+
+.MuiContainer-root {
+  padding: 0;
+}
+.app-bar{
+    background-image: linear-gradient(to right, #1a232d, #1b242d, #19242e);
+}
+
+.banner{
+    position: absolute;
+    left: 0;
+    background-image: url('../Images/bgHeaderImage.png');
+    background-repeat: no-repeat;
+    background-position: 0 -10vw;
+    background-size: cover;
+}
+
+@media (width >= 785px) {
+    .banner{
+        display: none;
+    }
+}

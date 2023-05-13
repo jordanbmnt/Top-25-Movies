@@ -4,7 +4,7 @@ import { List, User } from "phosphor-react";
 
 export default function AppNav() {
   return (
-    <AppBar sx={{ backgroundColor: "#1a242d" }} position='static'>
+    <AppBar className='app-bar' position='static'>
       <Toolbar>
         <Button>
           <List  size={24} weight='bold' color='#aa591f' />
