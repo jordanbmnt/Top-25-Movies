@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+
 .nav-heading{
-    font-family: 'Kanit', sans-serif;
-    font-weight: 400;
+    font-family: 'Bruno Ace SC', cursive;
 }
 
 .MuiContainer-root {
@@ -38,17 +38,38 @@ a{
     animation: pulse 600ms both alternate 4;
 }
 
-@media (width >= 785px) {
+.card-list-header{
+    width: 100%;
+    border: 1px solid #2a3741;
+    border-radius: 3px 3px 0 0;
+    color: white;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.movie-card{
+    /* background-image: url('../Images/Aquaman.jpg'); */
+    background-image: linear-gradient(to bottom, #2a3741, #202b34);
+    border: 1px solid #2a3741;
+    background-size: cover;
+    width: 80%;
+    aspect-ratio: 3/4;
+    margin: 10px 0;
+}
+
+@media (width >= 1200px) {
     .banner{
         display: none;
     }
     .card-list-container{
         position: absolute;
-        top: 10vh;
-        left: 10px;
-        min-width: calc(100vw - 20px);
+        top: 15vh;
+        left: 1.5vw;
+        min-width: 95vw;
         max-width: calc(100vw - 20px);
-        height: calc(90vh - 10px);
+        height: calc(80vh - 10px);
+        background-image: url('../Images/bgHeaderImage.png');
+        background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
