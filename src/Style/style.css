@@ -7,11 +7,13 @@
 .MuiContainer-root {
   padding: 0;
 }
+
 .app-bar{
     background-image: linear-gradient(to right, #1a232d, #1b242d, #19242e);
 }
 
 .banner{
+    transition: 1000ms;
     position: absolute;
     left: 0;
     background-image: url('../Images/bgHeaderImage.png');
@@ -20,8 +22,38 @@
     background-size: cover;
 }
 
+.card-list-container{
+    border-radius: 10px;
+    transition: 1000ms;
+    position: relative;
+    top: calc(27vh + 6px);
+    background-image: linear-gradient(to bottom, #2a3741, #111b23);
+    height: calc(62vh - 7px);
+    min-width: 90vw;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    animation: pulse 600ms both alternate 4;
+}
+
 @media (width >= 785px) {
     .banner{
         display: none;
     }
+    .card-list-container{
+        position: absolute;
+        top: 10vh;
+        left: 10px;
+        min-width: calc(100vw - 20px);
+        max-width: calc(100vw - 20px);
+        height: calc(90vh - 10px);
+    }
 }
+
+@keyframes pulse {
+    to {
+        font-size: large;
+    }
+  }

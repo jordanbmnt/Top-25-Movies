@@ -1,10 +1,12 @@
-import '../Style/style.css'
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
+import Banner from "../Components/Banner";
+import CardContainer from "../Components/CardContainer";
 
 export default function MainBoard() {
   return (
-    <Container sx={{padding: '0px', margin: '0px', display: 'flex', flexFlow: 'column', width: '100vw'}}>
-      <Box className="banner" sx={{backgroundColor: 'orange', width: '100vw', height: '26vh'}} />
+    <Container>
+      <Banner/>
+      <CardContainer/>
     </Container>
   );
 }

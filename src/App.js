@@ -1,7 +1,7 @@
 import '../src/Style/App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainBoard from './Pages/MainBoard';
-import AppNav from './Components/AppBar';
+import AppNav from './Components/AppNav';
 
 function App() {
   return (
