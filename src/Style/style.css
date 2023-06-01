@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
 
-.nav-heading{
+.nav-heading {
     font-family: 'Bruno Ace SC', cursive;
 }
 
 .MuiContainer-root {
-  padding: 0;
+    padding: 0;
 }
 
-.app-bar{
+.app-bar {
     background-image: linear-gradient(to right, #1a232d, #1b242d, #19242e);
 }
 
-.banner{
+.banner {
     transition: 1000ms;
     position: absolute;
     left: 0;
@@ -22,7 +22,7 @@
     background-size: cover;
 }
 
-.card-list-container{
+.card-list-container {
     border-radius: 10px;
     transition: 1000ms;
     position: relative;
@@ -32,13 +32,41 @@
     min-width: 90vw;
 }
 
-a{
+a {
     text-decoration: none;
     color: aliceblue;
     animation: pulse 600ms both alternate 4;
 }
 
-.card-list-header{
+.card-list {
+    width: calc(90vw/6 - 12px);
+    height: 103%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111b23;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2a3741;
+    border-radius: 1px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2a3741;
+}
+
+.card-list-header,
+.card-list-footer {
     width: 100%;
     border: 1px solid #2a3741;
     border-radius: 3px 3px 0 0;
@@ -46,21 +74,37 @@ a{
     font-family: 'Bruno Ace SC', cursive;
 }
 
-.movie-card{
-    /* background-image: url('../Images/Aquaman.jpg'); */
-    background-image: linear-gradient(to bottom, #2a3741, #202b34);
+.movie-card-film,
+.movie-card {
     border: 1px solid #2a3741;
     background-size: cover;
     width: 80%;
     aspect-ratio: 3/4;
+}
+
+.movie-card-film {
+    margin-top: 5px;
+}
+
+.movie-card {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, #2a3741, #202b34);
     margin: 10px 0;
 }
 
-@media (width >= 1200px) {
-    .banner{
+#Aquaman {
+    background-image: url('../Images/Aquaman.jpg');
+}
+
+@media (width >=1200px) {
+    .banner {
         display: none;
     }
-    .card-list-container{
+
+    .card-list-container {
         position: absolute;
         top: 15vh;
         left: 1.5vw;
@@ -77,4 +121,4 @@ a{
     to {
         font-size: large;
     }
-  }
+}
