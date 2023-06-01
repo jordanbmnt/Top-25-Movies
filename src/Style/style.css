@@ -95,6 +95,14 @@ a {
     margin: 10px 0;
 }
 
+.movie-card:hover{
+    transition: 500ms;
+    transition-delay: 70ms;
+    background-image: linear-gradient(to bottom, #364958, #2a3741);
+    scale: 1.157;
+    border: none;
+}
+
 #Aquaman {
     background-image: url('../Images/Aquaman.jpg');
 }

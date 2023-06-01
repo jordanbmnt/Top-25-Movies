@@ -12,7 +12,7 @@ export default function CardList(props) {
         borderLeftWidth: "3px",
       }}
     >
-      <Typography className='card-list-header'>Movie</Typography>
+      <Typography className='card-list-header'>{props.header}</Typography>
       {props.movies.map((movie) => (
         <Paper className='movie-card' elevation={3}>
           <Paper className='movie-card-film' id={movie} elevation={1} />

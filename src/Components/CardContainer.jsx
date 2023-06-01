@@ -1,15 +1,10 @@
 import "../Style/style.css";
 import { Container } from "@mui/material";
 import CardList from "./CardList";
+import movieList from "../Database/movieList";
 
 export default function CardContainer() {
-  const movieDb = [
-    ["Aquaman", "Avatar", "Avengers", "AvengersI", "Beauty"],
-    ["CaptainA", "CaptainM", "EndGame", "Frozen", "F7"],
-    ["Incredibles2", "IronMan", "JurassicW", "JurassicWF", "StarWarsE"],
-    ["TheAvengers", "FF", "LionKing", "Titanic", "Transformers"],
-    ["BlackP", "HarryPotter", "StarWarsT", "Aquaman", "Avengers"],
-  ];
+  const movieDb = movieList();
   return (
     <Container
       sx={{
@@ -21,7 +16,7 @@ export default function CardContainer() {
       className='card-list-container'
     >
       {movieDb.map((list) => (
-        <CardList movies={list} />
+        <CardList header={list.header} movies={list.movies} />
       ))}
     </Container>
   );
